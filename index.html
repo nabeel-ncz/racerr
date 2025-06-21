@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Racing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bg-overlay"></div>
+    <div id="ui">
+        <!-- <h1>PIXEL RACER</h1> -->
+        <div class="stats">
+            <div class="stat-item">Time: <span id="time">0.00</span>s</div>
+            <div class="stat-item">Lap: <span id="lap-count">1</span>/3</div>
+            <div class="stat-item">Speed: <span id="speed">0</span></div>
+        </div>
+        <!-- <div class="car-info">
+            Car: <span id="car-name">Red Racer</span>
+        </div> -->
+    </div>
+    <canvas id="gameCanvas" width="1000" height="700"></canvas>
+    <div class="controls">
+        <strong>Controls:</strong> 
+        <span class="control-key">W/↑</span> Accelerate | 
+        <span class="control-key">S/↓</span> Brake/Reverse | 
+        <span class="control-key">A/←</span> Turn Left | 
+        <span class="control-key">D/→</span> Turn Right
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
